@@ -1,4 +1,3 @@
 chromedriver
 beautifulsoup4
-json
 selenium
