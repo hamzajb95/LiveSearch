@@ -1,5 +1,4 @@
 chromedriver
 beautifulsoup4
-urllib.request
 json
 selenium
