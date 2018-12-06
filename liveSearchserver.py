@@ -40,7 +40,9 @@ def main():
       time.sleep(10)
   #These were used to allow app to access the account, use this again if account needs to be changed
   gauth = GoogleAuth()
-  gauth.CommandLineAuth()
+  scope = ['https://www.googleapis.com/auth/drive']
+  JSON_FILE = 'liveSearchDrive-c772ffa9b31c.json'
+  gauth.credentials = ServiceAccountCredentials.from_json_keyfile_name(JSON_FILE, scope)
   drive = GoogleDrive(gauth)
   now = datetime.datetime.now()
   date = 'LiveSearch '+ str(now.day) +'-'+str(now.month)+'-'+str(now.year)+'-'+str(now.hour) +'.csv'
