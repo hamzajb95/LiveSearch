@@ -40,7 +40,7 @@ def main():
       time.sleep(10)
   #These were used to allow app to access the account, use this again if account needs to be changed
   gauth = GoogleAuth()
-  #gauth.LocalWebserverAuth()
+  gauth.CommandLineAuth()
   drive = GoogleDrive(gauth)
   now = datetime.datetime.now()
   date = 'LiveSearch '+ str(now.day) +'-'+str(now.month)+'-'+str(now.year)+'-'+str(now.hour) +'.csv'
