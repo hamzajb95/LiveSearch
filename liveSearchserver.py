@@ -38,18 +38,20 @@ def main():
       file1 = json_loader(soupy,match)         
       writeRecords(file1)
       print(match)
-    time.sleep(10)
+      time.sleep(10)
   #These were used to allow app to access the account, use this again if account needs to be changed
   gauth = GoogleAuth()
   scope = ['https://www.googleapis.com/auth/drive']
   JSON_FILE = 'liveSearchDrive-c772ffa9b31c.json'
   gauth.credentials = ServiceAccountCredentials.from_json_keyfile_name(JSON_FILE, scope)
+  print("----------------------API HAS BEEN CONNECTED-----------------------")
   drive = GoogleDrive(gauth)
   now = datetime.datetime.now()
   date = 'LiveSearch '+ str(now.day) +'-'+str(now.month)+'-'+str(now.year)+'-'+str(now.hour) +'.csv'
   file1 = drive.CreateFile({'title':date})
   file1.SetContentFile('LiveSearch.csv')
   file1.Upload()
+  print("FILE HAS BEEN SUCCESSFULLY UPLOADED")
     
 
 def json_loader(souptxt,matchy): #use json module to access json file 
