@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "livesearchdrive",
+  "private_key_id": "c772ffa9b31c6f3f0ffb730ba303e128ef5c02d2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCbg2bMHozFbm0u\noHyCtjUl9sv3EqOYJnONagzpdQZ98diPYmUYAsfRip3Fs0tZDi2VG1lgo9z3uOcK\nxUv+06eQUt6ji90b3xwoPy+KRKR/wIfAJrZpjxFqrWlLnwqR6us47XO1xQLK2Mj6\nb6a1cIY9YzvcD8OCV7WyV2syELVx+DRPZoOqhq7tacZAmISVlLiph2Dijq/6jCOp\nShjOtiqinK/T/nT+vu2dDGORdbQPbasmq7CQNi5iteemO9ly4w2QlTVGqVTyLC4p\nhRUwori2lyC3DwMuE83abem/z5nAxZNm3VMrbHG+q19iid0CxYVWaDN/27hrt+uO\nCxwZ3Z5lAgMBAAECggEACzDabnu6pWt5S7wXRwBjKeNNEVoj78tBO07YyoUAwwKV\naFi24yfcvBFlofLcIXa3JNjQu/cBa/SARc1lrFsL9Bi5NkYr6A6htAC7WaUaZv9n\nwBYDwEFgH2UxY6nNz4B6+FVYDgofwGaiFyl+iDsmdyzuA2ZBVglx77lBjhsB35yq\n467kmz4IT7uz/ODiqVt+mN8SWl1+1//KN24qujg17aVaIYrAbf2U7a4Lozh2DjQq\nDUJIEwg9vWWvhJZXoOOISgypgCRJxn5s52eRiAICOP7HICt+3RhSXw9So04gdEA1\npefOImMKv2S2ycX1fFhYrn/UugOYzJpDlBwBw1qI8QKBgQDJ3EEhHtLaAfBEc+4e\ny/b8E58GmouD6PDJ8jlLrhr25/zn54lkridnR+fLz/Ke/CEXuYf0eDNoQuvLjlYe\nRoZG5iTzYJQ0NKUITtrbCDGVDoZ0eTuA1VfL4P7imNrQAey/JcwK++BZDKAPJGVr\nNAOWpmAKKs7eP6uQw72qEwmBkQKBgQDFOPQgSEIX/5S3tgJ2yGixFJo7lDp+Gm30\nRadO/rXWbhNK06SfAWE5ZCrAC80U0Ch1sV0J7mLkpoW0fWByf9OKZ0abSQcvtPsr\nF7PQ5oAU4L/aerTQsZfz1xlASVM+S9rEIpcr9SFAoyCvscON/H2P9Io+75sp21O2\nZy/49kdllQKBgGvnsmUbDgl9ycs90Ydi7rdXYcXs7TFpXvYE5r3e5wkff+ETsy0/\nr06VcIJRuddk3efJxLRZYNmWFGfuwXhTqMnTkuMKuI6jqaikRneZjK+qYRN4DufS\no6kXsAi/PxC8RqrzcHxaolXX2uPdR92jo1tvup0UvxqtHHA5QnTc0lMRAoGBAI3R\nVIraKtzC5hfsg30Sw2WCoR1yi1UegC6E37hIJE2bPbgy1E+aWGVCiBMs6T2sKUvo\nTDTV/Lram46cEXyEOoNtnDIRo19Ezs+/7YesGDHrI0phrh/bdJ7c78VwdLF5LkiX\nbwkm7dBi/SAZvbsd8tRPThHPjk3c7ydcr/xgbBq5AoGAJn8FF3uwodON291Nmv5+\nNbVsoykUp7ENHbq5BTeNu3rINnKvctlixRLugcTxIyUeGkTNNGklyXnN4OFRi1gd\nXFoBprUyiF63GPb7A1oPAVGBatK71JwRbvVXtvj4DLPYqXxgn+2x6QPoQ/oATCQe\nRch3F8T4c7EoPgVpB3FyZ9E=\n-----END PRIVATE KEY-----\n",
+  "client_email": "livesearchprojservice@livesearchdrive.iam.gserviceaccount.com",
+  "client_id": "116114227892665345507",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/livesearchprojservice%40livesearchdrive.iam.gserviceaccount.com"
+}
