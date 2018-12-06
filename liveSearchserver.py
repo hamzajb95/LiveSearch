@@ -31,7 +31,7 @@ def main():
   chrome_options.add_argument("--headless")    
   driver = webdriver.Chrome('/.chromedriver',chrome_options=chrome_options)
   
-  for i in range(2000):
+  for i in range(2):
     for link in y: 
       soupy = selSoup(driver,link)
       file1 = json_loader(soupy,match)         
