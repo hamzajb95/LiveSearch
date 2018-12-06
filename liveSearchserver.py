@@ -29,7 +29,7 @@ def main():
   
   chrome_options = Options()  
   chrome_options.add_argument("--headless")    
-  driver = webdriver.Chrome('/.chromedriver',chrome_options=chrome_options)
+  driver = webdriver.Chrome(executable_path='./chromedriver',chrome_options=chrome_options)
   
   for i in range(2):
     for link in y: 
