@@ -1,6 +1,3 @@
-from pydrive.auth import GoogleAuth
-from pydrive.auth import ServiceAccountCredentials
-from pydrive.drive import GoogleDrive
 import json
 import unicodecsv as csv
 from selenium import webdriver
@@ -31,27 +28,20 @@ def main():
   chrome_options = Options()  
   chrome_options.add_argument("--headless")    
   driver = webdriver.Chrome(executable_path='./chromedriver',chrome_options=chrome_options)
+  #These were used to allow app to access the account, use this again if account needs to be changed:
   
+  now = datetime.datetime.now()
+  date = 'LiveSearch '+ str(now.day) +'-'+str(now.month)+'-'+str(now.year)+'-'+str(now.hour) +'.csv'
+  
+
   for i in range(2):
     for link in y: 
       soupy = selSoup(driver,link)
       file1 = json_loader(soupy,match)         
-      writeRecords(file1)
+      writeRecords(file1,date)
       print(match)
       time.sleep(10)
-  #These were used to allow app to access the account, use this again if account needs to be changed
-  gauth = GoogleAuth()
-  scope = ['https://www.googleapis.com/auth/drive']
-  JSON_FILE = 'liveSearchDrive-c772ffa9b31c.json'
-  gauth.credentials = ServiceAccountCredentials.from_json_keyfile_name(JSON_FILE, scope)
-  print("----------------------API HAS BEEN CONNECTED-----------------------")
-  drive = GoogleDrive(gauth)
-  now = datetime.datetime.now()
-  date = 'LiveSearch '+ str(now.day) +'-'+str(now.month)+'-'+str(now.year)+'-'+str(now.hour) +'.csv'
-  file1 = drive.CreateFile({'title':date})
-  file1.SetContentFile('LiveSearch.csv')
-  file1.Upload()
-  print("FILE HAS BEEN SUCCESSFULLY UPLOADED")
+  
     
 
 def json_loader(souptxt,matchy): #use json module to access json file 
@@ -79,8 +69,8 @@ def json_loader(souptxt,matchy): #use json module to access json file
   return dat_block
   
 
-def writeRecords(cList):      #Takes list of lists as argument and writes them to csv file given as path
-  with open('LiveSearch.csv','ab') as fw:
+def writeRecords(cList,filename):      #Takes list of lists as argument and writes them to csv file given as path
+  with open(filename,'ab') as fw:
     file = csv.writer(fw,delimiter=',')
     data = cList
     file.writerows(data)
@@ -99,4 +89,4 @@ def selSoup(driver,theUrl):
   return x
   
 if __name__ == "__main__":
-    main()
+  main()
